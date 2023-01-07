@@ -40,7 +40,7 @@ function App() {
 
   const handleChange = (e, value) => {
     setLoading(true);
-    const user_id = users[value].id;
+    const user_id = users[value - 1].id;
     getSingleUserData(user_id);
     setLoading(false);
   };
